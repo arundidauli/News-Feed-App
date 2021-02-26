@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".utils.SplashActivity">
+
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@mipmap/bg_splash"
+        android:scaleType="centerCrop"
+        android:foreground="#88000000"/>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        app:cardUseCompatPadding="true"
+        android:layout_above="@+id/txt_name"
+        android:layout_centerHorizontal="true"
+        app:cardCornerRadius="@dimen/sp20">
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="centerCrop"
+            android:src="@mipmap/logo"/>
+    </androidx.cardview.widget.CardView>
+
+
+
+    <TextView
+        android:id="@+id/txt_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/app_name"
+        android:layout_centerInParent="true"
+        android:textSize="24sp"
+        android:fontFamily="@font/netproximanovasoft"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        />
+    <TextView
+        android:id="@+id/sub_heading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Be update with newsfeed"
+        android:layout_below="@+id/txt_name"
+        android:layout_centerInParent="true"
+        android:textSize="12sp"
+        android:fontFamily="@font/netproximanovasoft"
+        android:padding="@dimen/sp18"
+        android:textColor="@color/white"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Copyright (c) 2020-21  wingshieldtechnologies.com All rights reserved."
+        android:layout_centerInParent="true"
+        android:textSize="12sp"
+        android:layout_marginStart="@dimen/sp20"
+        android:layout_marginEnd="@dimen/sp20"
+        android:textAlignment="center"
+        android:fontFamily="@font/netproximanovasoft"
+        android:layout_marginBottom="50dp"
+        android:lineSpacingExtra="6sp"
+        android:layout_alignParentBottom="true"
+        android:padding="@dimen/sp18"
+        android:textColor="@color/white"
+        />
+
+
+
+
+</RelativeLayout>
