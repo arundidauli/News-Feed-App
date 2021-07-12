@@ -65,7 +65,7 @@ See also the list of [contributors](https://github.com/arundidauli/News-Feed-App
 
 ## License
 
-
+```
   ~ MIT License
   ~
   ~ Copyright (c) 2020-21 Arun Android
@@ -88,7 +88,7 @@ See also the list of [contributors](https://github.com/arundidauli/News-Feed-App
   ~ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
   ~ SOFTWARE.
 
-
+```
 
 ## Acknowledgments
 
