@@ -45,6 +45,7 @@ import android.widget.TextView;
 import com.bumptech.glide.Glide;
 import com.example.android.newsfeed.News;
 import com.example.android.newsfeed.R;
+import com.example.android.newsfeed.WebViewActivity;
 
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
@@ -85,7 +86,7 @@ public class NewsAdapter extends RecyclerView.Adapter<NewsAdapter.ViewHolder> {
     }
 
     class ViewHolder extends RecyclerView.ViewHolder {
-        private TextView titleTextView;
+        private final TextView titleTextView;
         private TextView sectionTextView;
         private TextView authorTextView;
         private TextView dateTextView;
@@ -144,11 +145,12 @@ public class NewsAdapter extends RecyclerView.Adapter<NewsAdapter.ViewHolder> {
             @Override
             public void onClick(View view) {
                 // Convert the String URL into a URI object (to pass into the Intent constructor)
-                Uri newsUri = Uri.parse(currentNews.getUrl());
+               // Uri newsUri = Uri.parse(currentNews.getUrl());
 
                 // Create a new intent to view the news URI
-                Intent websiteIntent = new Intent(Intent.ACTION_VIEW, newsUri);
-
+                //Intent websiteIntent = new Intent(Intent.ACTION_VIEW, newsUri);
+                Intent websiteIntent = new Intent(mContext, WebViewActivity.class);
+                websiteIntent.putExtra("uri",currentNews.getUrl());
                 // Send the intent to launch a new activity
                 mContext.startActivity(websiteIntent);
             }

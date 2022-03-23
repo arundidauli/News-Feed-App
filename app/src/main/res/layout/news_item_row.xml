@@ -6,10 +6,10 @@
     android:layout_height="wrap_content"
     android:clickable="true"
     android:focusable="true"
+    android:outlineSpotShadowColor="@color/green"
     android:id="@+id/card_view"
-    android:layout_margin="5dp"
-    card_view:cardElevation="3sp"
-    android:foreground="?android:attr/selectableItemBackground"
+    card_view:cardUseCompatPadding="true"
+    card_view:cardElevation="6dp"
     card_view:cardCornerRadius="16dp">
 
     <LinearLayout
