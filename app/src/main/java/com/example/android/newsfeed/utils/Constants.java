@@ -28,7 +28,7 @@ package com.example.android.newsfeed.utils;
  * Store Constants for the NewsFeed app.
  */
 
-public class Constants {
+public class  Constants {
 
     /**
      * Create a private constructor because no one should ever create a {@link Constants} object.

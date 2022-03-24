@@ -23,6 +23,7 @@ public class SplashActivity extends AppCompatActivity {
                 intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK);
                 intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
                 SplashActivity.this.startActivity(intent);
+                finish();
             }
         }, 3000);
     }
